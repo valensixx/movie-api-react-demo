@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import React,{useState, useEffect, useRef} from "react";
 import './App.css';
 
-function App() {
-  return (
+/*
+Task 9 --> Movie search
+Create app for movie search. Use https://www.omdbapi.com/.
+key=
+*/
+
+export default function App(){
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
-
-export default App;
