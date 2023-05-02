@@ -7,7 +7,7 @@ export default function MovieDetails({movie}){
             <>
                 <h1>{movie.Title}{movie.Year}</h1>
                 <img src={movie.Poster}/>
-                <p>{movie.imdbRating}</p>
+                <p className="rating">{movie.imdbRating}</p>
                 <p>{movie.Genre}</p>
                 <p>{movie.Plot}</p>
                 <p>Actors: {movie.Actors}</p>

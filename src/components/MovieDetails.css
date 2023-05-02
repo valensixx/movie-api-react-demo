@@ -1,0 +1,13 @@
+.movie-info {
+    text-align: center;
+}
+
+.movie-info p {
+    font-style: italic;
+}
+
+.movie-info .rating {
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 30px;
+}
