@@ -1,6 +1,7 @@
 import React,{useState, useEffect, useRef} from "react";
 import './App.css';
 import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
 
 /*
 Task 9 --> Movie search
@@ -12,6 +13,7 @@ export default function App(){
   return(
     <div className="App">
         <Header />
+        <SearchBar/>
     </div>
   );
 }
