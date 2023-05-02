@@ -3,7 +3,9 @@ import './App.css';
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import MovieDetails from "./components/MovieDetails";
-import {Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Home from "./Home";
+import About from "./About";
 
 /*
 Task 9 --> Movie search
@@ -25,7 +27,12 @@ export default function App() {
 
   return (
     <div className="App">
+
       <Header />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       <SearchBar
         setSearchTerm={setSearchTerm}
         onButtonClick={searchMovie}
