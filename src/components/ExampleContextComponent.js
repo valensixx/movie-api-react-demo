@@ -1,13 +1,18 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import MyContext from "../context/MyContext";
 
-export default function ExampleContextComponent(){
+export default function ExampleContextComponent() {
 
     const context = useContext(MyContext);
 
-    return(
+    return (
         <div>
-            {context.message}
+            {context.data.counter}
+            <button onClick={() => {
+                context.setData({...{ counter: context.data.counter + 1 }})
+            }}>
+                +
+            </button>
         </div>
     );
 }

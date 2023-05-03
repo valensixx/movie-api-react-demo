@@ -4,13 +4,15 @@ import ExampleContextComponent from "./components/ExampleContextComponent";
 
 export default function Context(){
 
-    const sharedData = {
-        message: 'Hello from Context'
-    };
+   // const sharedData = {
+        //message: 'Hello from Context'
+    //}; <MyContext.Provider value = {{sharedData}
+
+    const [data, setData] = useState({counter: 0});
 
     return(
         <div className="Context">
-            <MyContext.Provider value = {sharedData}>
+            <MyContext.Provider value = {{data: data, setData:setData}}> 
                 <ExampleContextComponent/>
             </MyContext.Provider>
         </div>
