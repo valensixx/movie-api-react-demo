@@ -6,6 +6,7 @@ import MovieDetails from "./components/MovieDetails";
 import { Routes, Route } from 'react-router-dom';
 import Home from "./Home";
 import About from "./About";
+import Axios from "./Axios";
 
 /*
 Task 9 --> Movie search
@@ -38,6 +39,7 @@ export default function App() {
         onButtonClick={searchMovie}
       />
       <MovieDetails movie={movie} />
+      <Axios/>
     </div>
   );
 }
