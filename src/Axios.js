@@ -22,7 +22,9 @@ export default function Axios() {
 
     return (
         <div className="Axios">
-            
+            <ul>
+                {users.map(user =><li key={user.id}>{user.name}</li>)}
+            </ul>
         </div>
     );
 }
